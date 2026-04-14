@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0b3d91, #00a3e0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 20%);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #0b3d91;
+  margin-bottom: 15px;
+}
+
+.correo {
+  color: #333;
+  font-size: 1.1rem;
+}

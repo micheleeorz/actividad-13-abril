@@ -1,0 +1,15 @@
+{
+  "name": "actividad-13-abril",
+  "version": "1.0.0",
+  "description": "Pagina estatica para despliegue en AWS",
+  "scripts": {
+    "lint:html": "htmlhint pagina/pagina.html",
+    "lint:css": "stylelint pagina/style.css",
+    "build": "mkdir -p dist && cp -r pagina/* dist/"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}

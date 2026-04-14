@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Instalando dependencias..."
+      - npm install
+
+  pre_build:
+    commands:
+      - echo "Validando HTML..."
+      - npm run lint:html
+      - echo "Validando CSS..."
+      - npm run lint:css
+
+  build:
+    commands:
+      - echo "Generando artefacto..."
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
